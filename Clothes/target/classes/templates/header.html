@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>My Ecommerce Site</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" integrity="sha512-qZ3k+Z+hDCvnKtx+w8Nzk10x++pJy1zG1M/84nMYzXZ2NgMBrfOnirgdeWbJ8Hk+fxPrpGN1lKcnOAPc0lX70Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" th:href="@{/home}">Clothes for Men</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/home}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/bag}">Bag</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/login/admin}">Admin</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" th:href="@{/product/pants}">Pants</a></li>
+              <li><a class="dropdown-item" th:href="@{/product/shirts}">Shirt</a></li>
+              <li><a class="dropdown-item" th:href="@{/product/hoodies}">Hoodies</a></li>
+              <li><a class="dropdown-item" th:href="@{/product/shoes}">Shoes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" th:href="@{/About}">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-xr0cPwKJwkLkfC0NTWTg0V9lxswCEfM63MfUKwoGD0FtGxRtAKyoK7y5Wts+kgf7O9Xzn3uq7VkbWt27uO7J3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
